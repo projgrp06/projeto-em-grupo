@@ -11,7 +11,8 @@ header {
 
 .cabecalho-pesquisa-txt {
     position: absolute;
-    left: 15%;
+    left: 20%;
+    top: 4%;
     height: 35px;
     width: 600px;
     border: 50px;
@@ -37,6 +38,12 @@ header {
     color: white;
     font-weight: bold;
     font-size: large;
+}
+
+.cabecalho-logo {
+    position: absolute;
+    top: 1%;
+    left: 1%;
 }
 
 .btnCarrinho {
