@@ -1,1 +1,74 @@
 @charset "UTF-8";
+
+body {
+    background-color: rgb(227, 229, 230);
+}
+
+.btnCarrinho {
+    padding: 7px 7px;
+    width: 50px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    position: absolute;
+    left: 91%;
+    top: 2.5%; 
+}
+
+.btnEntrar {
+    padding: 7px 7px;
+    width: 50px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    position: absolute;
+    left: 95%;
+    top: 2.5%;     
+}
+
+button:hover {
+    background-color: rgb(129, 129, 129);
+}
+
+header {
+    background-color: black;
+    height: 70px;
+}
+
+.cabecalho-pesquisa-txt {
+    position: absolute;
+    left: 15%;
+    height: 35px;
+    width: 600px;
+    border: 50px;
+    padding: 5px;
+}
+
+.menu {
+    background-color: rgb(185, 149, 204);
+    height: 35px;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: rgb(197, 181, 211);
+    padding: auto;
+    height: 22px;
+    width: 120px;
+    margin-top: 3.5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+a:hover {
+    background-color: rgb(129, 129, 129);
+}
