@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossa Equipe</title>
     <link rel="stylesheet" href="style.css">
-    <script src="../proj.js"></script>
-
 </head>
-
 <body>
+    
+    <header class="cabecalho"> <!--Cabeçalho onde se encontram a logo da empresa, o menu de navegação e os botões do carrinho e de login-->
+        <img class="cabecalho-logo" src="../Teste/imagens/logo.png" alt="Ícone da Harmony Looks.">
 
-    <header class="cabecalho">
-        <img class="cabecalho-logo" src="imagens/logo.png" alt="Ícone da Harmony Looks.">
-        <div class="cabecalho-pesquisa">
-            <input type="search" class="cabecalho-pesquisa-txt" placeholder="Faça sua busca">
-            <a href="#" class="cabecalho-pesquisa-btn">
+            <nav class="menu"> <!--Menu de navegação-->
+                <a class="menu-item" href="../index.html">Catálogo</a>
+                <a class="menu-item" href="../quem-somos/quem-somos.html">Quem Somos</a>
+                <a class="menu-item" href="../nossa-equipe/nossa-equipe.html">Nossa Equipe</a>
+                <a class="menu-item" href="../fale-conosco/fale-conosco.html">Fale Conosco</a>
+            </nav>
 
-            </a>
-            <span>
-                <button class="btnCarrinho" type=“button”><img src="imagens/carrinho.png" alt="Ícone de carrinho."></button>
-                <button class="btnEntrar" type="button"><img src="imagens/user.png" alt="Ícone de usuário."></button>
+            <span> <!--Tag span com os botões de carrinho e login-->
+                <button class="btnCarrinho" type=“button”><img src="../Teste/imagens/carrinho.png" alt="Ícone de carrinho."></button>
+                <button class="btnEntrar" type="button"><img src="../Teste/imagens/user.png" alt="Ícone de usuário."></button>
             </span>
-        </div>
     </header>
 
-    <nav class="menu">
-        <a class="menu-item" href="index.html">Catálogo</a>
-        <a class="menu-item" href="../quem-somos/quem-somos.html">Quem Somos</a>
-        <a class="menu-item" href="../nossa-equipe/nossa-equipe.html">Nossa Equipe</a>
-        <a class="menu-item" href="../fale-conosco/fale-conosco.html">Fale Conosco</a>
-    </nav>
-
-    <main class="principal">
-        <h1 class="principal-titulo">Nossa equipe</h1>
-        
+    <main> <!--Conteúdo da página-->
+        <h1>Conheça a nossa <span id="p_equipe">equipe</span></h1>
+        <div class="equipe">
+            <img src="imagens/avatar_matheus_keher.jpg" alt="Avatar do Matheus Keher"><p><strong>Matheus Keher<br><span id="p_equipe">Diretor Geral</span><br></p><p class="p-equipe"></strong>Dirige, planeja, organiza e controla as atividades de diversas áreas da empresa, fixando políticas de gestão dos recursos financeiros, administrativos, estruturação, racionalização, e adequação dos serviços diversos. Desenvolve o planejamento estratégico, identifica oportunidades, avalia a viabilidade e faz recomendações sobre novos investimentos ou desenvolvimento de novos negócios. </p>
+        </div>
+        <div class="equipe">
+            <img src="imagens/avatar_brian.jpeg" alt="Avatar do Brian"><p><strong>Brian Cerqueira<br><span id="p_equipe">Gerente de Marketing</span><br></p><p class="p-equipe"></strong> Desenvolve estratégias de marketing e identidade visual da marca, define o posicionamento da empresa e de canais de comunicação específicos para cada público, analisa as tendências do mercado e fatores econômicos e financeiros, planeja e define campanhas voltadas para promoção de produtos e serviços. </p>
+        </div>
+        <div class="equipe">
+            <img src="imagens/avatar_deise.png" alt="Avatar da Deise"><p><strong>Deise Lima<br><span id="p_equipe">Gerente de Recursos Humanos</span><br></p><p class="p-equipe"></strong>Gerencia a área de recursos humanos, planeja e desenvolve estratégias de planos de cargos e salários, administração pessoal e relações trabalhistas e sindicais, de acordo com as exigências legais e políticas da empresa. Elabora ações de pesquisa de clima organizacional para mensurar a satisfação dos colaboradores. Apoia os gestores e diretores na gestão das pessoas através de orientações e feedbacks.</p>
+        </div>
+        <br>
+        <div class="equipe">
+            <img src="imagens/avatar-mariana.jpeg" alt="Avatar da Mariana"><p><strong>Mariana Figueiredo<br><span id="p_equipe">Gerente Financeiro</span><br></p><p class="p-equipe"></strong>  Gere, planeja e organiza as atividades de controladoria da empresa. Responsável pela gestão de tributos, formação do preço de venda, auditoria, controle das contas a pagar, controle das aplicações financeiras, controle dos saldos bancários, administração do fluxo de caixa e análise das demonstrações financeiras.</p>
+        </div>
+        <div class="equipe">
+            <img src="imagens/avatar_matheus_duarte.jpeg" alt="Avatar do Matheus Duarte"><p><strong>Matheus Duarte<br><span id="p_equipe">Gerente Comercial</span><br></p><p class="p-equipe"></strong>Gerencia diretrizes e define estratégias para comercialização de produtos e serviços. Desenvolve estudos sobre potencial, planos e programas de vendas e acompanha concorrentes, a fim de atingir os objetivos da empresa e aumentar participação no mercado. Avalia relatório de resultados das vendas, métricas e índices de performance..</p>
+        </div>
     </main>
 
-    <footer class="rodape">
+    
+    <footer class="rodape"> <!--Rodapé onde tem endereço, formas de pagamento e redes sociais da empresa-->
         <section class="rodape-endereco">
             <p class="rodape-endereco-texto">Estr. do Mendanha, 555 - Campo Grande, Rio de Janeiro - RJ, 23087-283</p>
             <iframe class="rodape-endereco-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.7827184023063!2d-43.559794585034716!3d-22.884483585023165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be3d20a0c057d%3A0x37af24e9e756f5cf!2sWest%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1664299896838!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
-        <section class="rodape-pagamento">
+        <section class="rodape-pagamento"> <!--Formas de pagamento-->
             <img class="rodape-pagamento-item" src="imagens/formas-pagamento.png" alt="Formas de pagamento do site.">
             <img class="rodape-pagamento-item2" src="imagens/seguranca.png" alt="Selo de segurança do site.">
         </section>
 
-        <section class="rodape-sociais">
+        <section class="rodape-sociais"> <!--Redes sociais-->
             <p class="rodape-sociais-texto">Nossas redes sociais</p>
             <div class="rodape-sociais-container">
                 <a  class="rodape-sociais-item" href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png" alt="Ícone do Facebook."></a>
@@ -59,6 +66,6 @@
             </div>
         </section>
     </footer>
-
+    
 </body>
 </html>
