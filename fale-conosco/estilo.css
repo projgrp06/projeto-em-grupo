@@ -200,3 +200,8 @@ input[type=submit]{
     border: 2px solid rgb(185, 149, 204);
     border-radius: 10px;
 }
+
+.p-form {
+    text-align: justify;
+}
+
