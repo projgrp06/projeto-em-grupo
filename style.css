@@ -82,7 +82,6 @@ span {
 
 .principal {
     margin-bottom: 100px;
-    padding-top: 110px;
     text-align: center;
 }
 
@@ -109,6 +108,7 @@ span {
     width: 100%;
     height: auto;
     margin-bottom:50px;
+    padding-top: 110px;
 }
 
 .principal-catalogo {
@@ -154,8 +154,10 @@ span {
 
 h1 {
     text-align: center;
+    margin-top: 0;
     padding: 30px;
     padding-top: 150px;
+    font-size: 28px;
 }
 
 .p-equipe {
