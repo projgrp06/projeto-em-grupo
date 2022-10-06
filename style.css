@@ -148,6 +148,38 @@ span {
     text-align: justify;
 }
 
+.nossa-equipe {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    padding-top: 150px;
+}
+
+.p-equipe {
+    font-size: small;
+    text-align: justify;
+    color: rgb(85, 85, 85);
+}
+.equipe {
+    display: inline-table;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 370px;
+    padding: 2px;
+    margin: 5px 0 0 0;
+    border: 3px solid rgb(185, 149, 204);
+    border-radius: 15px;
+    text-align: center;
+}
+
+#p_equipe {
+    color: rgb(185, 149, 204);
+    margin: auto;
+}
+
 .rodape {
     display: flex;
     flex-direction: row;
