@@ -1,61 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale conosco</title>
+    <title>Fale Conosco</title>
     <link rel="stylesheet" href="style.css">
-    <script src="../proj.js"></script>
-
 </head>
-
 <body>
+    
+    <header class="cabecalho"> <!--Cabeçalho onde se encontram a logo da empresa, o menu de navegação e os botões do carrinho e de login-->
+        <img class="cabecalho-logo" src="../Teste/imagens/logo.png" alt="Ícone da Harmony Looks.">
 
-    <header class="cabecalho">
-        <img class="cabecalho-logo" src="imagens/logo.png" alt="Ícone da Harmony Looks.">
-        <div class="cabecalho-pesquisa">
-            <input type="search" class="cabecalho-pesquisa-txt" placeholder="Faça sua busca">
-            <a href="#" class="cabecalho-pesquisa-btn">
+            <nav class="menu"> <!--Menu de navegação-->
+                <a class="menu-item" href="../index.html">Catálogo</a>
+                <a class="menu-item" href="../quem-somos/quem-somos.html">Quem Somos</a>
+                <a class="menu-item" href="../nossa-equipe/nossa-equipe.html">Nossa Equipe</a>
+                <a class="menu-item" href="../fale-conosco/fale-conosco.html">Fale Conosco</a>
+            </nav>
 
-            </a>
-            <span>
-                <button class="btnCarrinho" type=“button”><img src="imagens/carrinho.png" alt="Ícone de carrinho."></button>
-                <button class="btnEntrar" type="button"><img src="imagens/user.png" alt="Ícone de usuário."></button>
+            <span> <!--Tag span com os botões de carrinho e login-->
+                <button class="btnCarrinho" type=“button”><img src="../Teste/imagens/carrinho.png" alt="Ícone de carrinho."></button>
+                <button class="btnEntrar" type="button"><img src="../Teste/imagens/user.png" alt="Ícone de usuário."></button>
             </span>
-        </div>
     </header>
-
-    <nav class="menu">
-        <a class="menu-item" href="index.html">Catálogo</a>
-        <a class="menu-item" href="../quem-somos/quem-somos.html">Quem Somos</a>
-        <a class="menu-item" href="../nossa-equipe/nossa-equipe.html">Nossa Equipe</a>
-        <a class="menu-item" href="../fale-conosco/fale-conosco.html">Fale Conosco</a>
-    </nav>
-
-    <main class="principal">
-        <h1 class="principal-titulo">Fale conosco</h1>
+    
+    <main id="formulario"> <!--Conteúdo da página-->
+        <h1 class="principal-titulo">Central de Relacionamento</h1>
+        <form class="formulario" method="post" onsubmit="validacao()"> <!--Formulário de contato-->
+            <h2>Fale Conosco</h2>
+            <hr>
+            <div class="field">
+                <label for="nome" class="p-form"><b> Seu nome:</b></label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome.*">
+            </div>
         
+            <div class="field">
+                <label for="email" class="p-form"><b>Seu e-mail:</b></label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail.*">
+            </div>              
+            <br>
+            <div class="frield rediobox" style="text-align: initial; font-size: large;">
+                <span><b>Assunto:</b></span>
+                <form method="post" action="cadastrar-enquete.php">
+                    <select name="time">
+                        <option value="-">-</option>
+                        <option value="pro">Produtos</option>
+<                       <option value="tro">Trocas e devoluções</option>
+                        <option value="car">Cartões Harmony Looks</option>
+                        <option value="rec">Reclamações ou elogios</option>
+                        <option value="out">Outros assuntos</option>
+                    </select>
+            </div>
+            <br>
+            <div class="field">
+                <label for="mensagem" class="p-form"><b>Sua mensagem:</b></label>
+                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem.*"></textarea>
+            </div>
+            <br>
+            <div class="field radiobox">
+                <span>Deseja receber nossas novidades?</span>
+                <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+            </div>
+            <br>
+        
+            <div class="field rediobox">
+                <span>Defina seu nível de satisfação:<br></span>
+                Pouco satisfeito 
+                <input type="range" name="satisfacao" min="0" max="10">
+                Muito satisfeito 
+            </div>
+            <br>
+            <br>
+            <br>
+            <input type="submit" name="acao" value="Enviar">
+        </form>
     </main>
-
-    <footer class="rodape">
-        <section class="rodape-endereco">
+    
+    <footer class="rodape"> <!--Rodapé onde tem endereço, formas de pagamento e redes sociais da empresa-->
+        <section class="rodape-endereco"> <!--Endereço com mapa-->
             <p class="rodape-endereco-texto">Estr. do Mendanha, 555 - Campo Grande, Rio de Janeiro - RJ, 23087-283</p>
             <iframe class="rodape-endereco-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.7827184023063!2d-43.559794585034716!3d-22.884483585023165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be3d20a0c057d%3A0x37af24e9e756f5cf!2sWest%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1664299896838!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
-        <section class="rodape-pagamento">
-            <img class="rodape-pagamento-item" src="imagens/formas-pagamento.png" alt="Formas de pagamento do site.">
-            <img class="rodape-pagamento-item2" src="imagens/seguranca.png" alt="Selo de segurança do site.">
+        <section class="rodape-pagamento"> <!--Formas de pagamento-->
+            <img class="rodape-pagamento-item" src="../imagens/formas-pagamento.png" alt="Formas de pagamento do site.">
+            <img class="rodape-pagamento-item2" src="../imagens/seguranca.png" alt="Selo de segurança do site.">
         </section>
 
-        <section class="rodape-sociais">
+        <section class="rodape-sociais"> <!--Redes sociais-->
             <p class="rodape-sociais-texto">Nossas redes sociais</p>
             <div class="rodape-sociais-container">
-                <a  class="rodape-sociais-item" href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png" alt="Ícone do Facebook."></a>
-                <a  class="rodape-sociais-item" href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.png" alt="Ícone do Instagram."></a>
-                <a  class="rodape-sociais-item" href="https://web.whatsapp.com/" target="_blank"><img src="imagens/whatsapp.png" alt="Ícone do Whatsapp."></a>
+                <a  class="rodape-sociais-item" href="https://www.facebook.com/" target="_blank"><img src="../imagens/facebook.png" alt="Ícone do Facebook."></a>
+                <a  class="rodape-sociais-item" href="https://www.instagram.com/" target="_blank"><img src="../imagens/instagram.png" alt="Ícone do Instagram."></a>
+                <a  class="rodape-sociais-item" href="https://web.whatsapp.com/" target="_blank"><img src="../imagens/whatsapp.png" alt="Ícone do Whatsapp."></a>
             </div>
         </section>
     </footer>
